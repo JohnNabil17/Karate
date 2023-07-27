@@ -1,0 +1,1022 @@
+15:20:40.637 karate.env system property was: dev 
+15:20:40.695 [print] Background Variable value ==> someValue
+15:20:40.700 [print] Scenario Variable value ==> author
+15:20:40.700 [print] Scenario Variable value ==> authorpassword
+15:20:40.890 karate.env system property was: dev 
+15:20:41.484 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":41,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+15:20:42.131 response time in milliseconds: 645.62
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7eccf10688e4d611-CDG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 13:20:42 GMT
+1 < Etag: W/"8b-2ujKj0JoApuqfAqh1wg+j/b2QSU"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UNOrycF2%2Bjl7O7KNjs94LN0MuCyrtcOeut%2F7C4fD%2FyAw0%2F6%2FRWcK%2FQQUPaPg0p7l%2BDTg74zqzH2s54q9XqXKM9rZWZBxM4JcY6HQcyvzEWvUtDy3X4hFS6KS4mrXpykdty6lKMJaudvBUuiaPvfr"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1690377684
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 41,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+g: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:48.009 response time in milliseconds: 461.77
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb71673e800c4b-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:49 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NFQIE0Qj6o88AuSLJRo71KmxsZJ6FQlpZmNjU6VU5vNSi5KAjxlu5u%2Fazx8GGxe2Y418JdQF%2FygHep8e0dh%2FYpCZpHldVRnEpBHccC1lgMFEjnXFzR%2BR9dAgck5UBxul4tOt%2BnGrNbViLq6m8xTZ"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{}
+
+10:58:48.015 request:
+2 > GET https://jsonplaceholder.typicode.com/posts89
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:48.520 response time in milliseconds: 502.79
+2 < 404
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: MISS
+2 < CF-RAY: 7ecb716a190641b9-MRS
+2 < Cache-Control: max-age=43200
+2 < Connection: keep-alive
+2 < Content-Length: 2
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 26 Jul 2023 08:58:49 GMT
+2 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+2 < Expires: -1
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Pragma: no-cache
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xNWurNNOOCyW9RqgLi%2FTEiLIxpzzccDRsKKHvrkiuy%2BV13zbYLia2kjCsUHB74QWd4xlLm4jz%2Fpih0ddRBVUXcTmvxDlkxZ%2FDCt7M7MsH0pWBAfToUvKnLUkScEeFVJPMPKZITx4Ee2EhXuDXvIT"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 997
+2 < X-Ratelimit-Reset: 1690361964
+2 < alt-svc: h3=":443"; ma=86400
+{}
+
+10:58:48.724 karate.env system property was:  
+10:58:48.743 [print] Helper ==> https://jsonplaceholder.typicode.com
+10:58:48.744 [print] Helper ==> /posts
+10:58:48.745 [print] Helper ==> 3
+10:58:48.748 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 121
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":3,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+10:58:49.236 response time in milliseconds: 486.88
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb716ebbfe11ae-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 138
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:50 GMT
+1 < Etag: W/"8a-zUDPNrZtPtJv1ZJSp/judkJNXrw"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7UFuQlXCM9%2B0re1rlObl8nXpEZd4fjgb3WB%2BCfygwVuBxAgrpA1R9lJfcnZq3DLPf4O4T0kdjbHAXgGY61imiLaEEY9mfCO5wbsnwuzKatBHB5PX79Gwf9CokJPBLMO9brs7T1JMmM8hdFfZlhch"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 996
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 3,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+10:58:49.241 request:
+1 > GET https://jsonplaceholder.typicode.com/comments?postId=3&id=101
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:49.743 response time in milliseconds: 502.05
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: MISS
+1 < CF-RAY: 7ecb7171ee4818a7-MRS
+1 < Cache-Control: max-age=43200
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:50 GMT
+1 < Etag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KMzZ9Y2jaL82P%2BUOZXzunSEjRqU9KgN4JUUCu5vxVDaui4htlLlLH5PmooaZ6aE6jvQdCFgst%2BqRtxm1G8cvX6jDhA3YF009rAZ4xLloqUmGEJ9UoynmEWryFY60JzTYxhdn5UlVIJqNV7Eo8WUC"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 995
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+[]
+
+10:58:49.791 karate.env system property was:  
+10:58:49.801 request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:50.699 response time in milliseconds: 894.40
+1 < 200
+1 < Cache-Control: [no-cache, private, max-age=21600]
+1 < Content-Type: application/json
+1 < Date: Wed, 26 Jul 2023 08:58:50 GMT
+1 < Expires: Wed, 26 Jul 2023 14:58:51 GMT
+1 < Server: nginx/1.21.6
+1 < Vary: Accept-Encoding
+1 < X-Endurance-Cache-Level: 2
+1 < X-Proxy-Cache: MISS
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < X-Server-Cache: true
+1 < X-nginx-cache: WordPress
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+10:58:50.702 [print] {
+  "data": [
+    {
+      "profile_image": "",
+      "employee_name": "Tiger Nixon",
+      "employee_salary": 320800,
+      "id": 1,
+      "employee_age": 61
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Garrett Winters",
+      "employee_salary": 170750,
+      "id": 2,
+      "employee_age": 63
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Ashton Cox",
+      "employee_salary": 86000,
+      "id": 3,
+      "employee_age": 66
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Cedric Kelly",
+      "employee_salary": 433060,
+      "id": 4,
+      "employee_age": 22
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Airi Satou",
+      "employee_salary": 162700,
+      "id": 5,
+      "employee_age": 33
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Brielle Williamson",
+      "employee_salary": 372000,
+      "id": 6,
+      "employee_age": 61
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Herrod Chandler",
+      "employee_salary": 137500,
+      "id": 7,
+      "employee_age": 59
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Rhona Davidson",
+      "employee_salary": 327900,
+      "id": 8,
+      "employee_age": 55
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Colleen Hurst",
+      "employee_salary": 205500,
+      "id": 9,
+      "employee_age": 39
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Sonya Frost",
+      "employee_salary": 103600,
+      "id": 10,
+      "employee_age": 23
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Jena Gaines",
+      "employee_salary": 90560,
+      "id": 11,
+      "employee_age": 30
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Quinn Flynn",
+      "employee_salary": 342000,
+      "id": 12,
+      "employee_age": 22
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Charde Marshall",
+      "employee_salary": 470600,
+      "id": 13,
+      "employee_age": 36
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Haley Kennedy",
+      "employee_salary": 313500,
+      "id": 14,
+      "employee_age": 43
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Tatyana Fitzpatrick",
+      "employee_salary": 385750,
+      "id": 15,
+      "employee_age": 19
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Michael Silva",
+      "employee_salary": 198500,
+      "id": 16,
+      "employee_age": 66
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Paul Byrd",
+      "employee_salary": 725000,
+      "id": 17,
+      "employee_age": 64
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Gloria Little",
+      "employee_salary": 237500,
+      "id": 18,
+      "employee_age": 59
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Bradley Greer",
+      "employee_salary": 132000,
+      "id": 19,
+      "employee_age": 41
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Dai Rios",
+      "employee_salary": 217500,
+      "id": 20,
+      "employee_age": 35
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Jenette Caldwell",
+      "employee_salary": 345000,
+      "id": 21,
+      "employee_age": 30
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Yuri Berry",
+      "employee_salary": 675000,
+      "id": 22,
+      "employee_age": 40
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Caesar Vance",
+      "employee_salary": 106450,
+      "id": 23,
+      "employee_age": 21
+    },
+    {
+      "profile_image": "",
+      "employee_name": "Doris Wilder",
+      "employee_salary": 85600,
+      "id": 24,
+      "employee_age": 23
+    }
+  ],
+  "message": "Successfully! All records has been fetched.",
+  "status": "success"
+}
+
+10:58:50.762 karate.env system property was:  
+10:58:50.766 request:
+1 > GET https://dummyjson.com/products
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:50.776 java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (dummyjson.com), http call failed after 10 milliseconds for URL: https://dummyjson.com/products
+10:58:50.776 http request failed: 
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (dummyjson.com)
+10:58:50.816 karate.env system property was:  
+10:58:50.818 request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:51.576 response time in milliseconds: 756.55
+1 < 429
+1 < Cache-Control: no-cache, private
+1 < Content-Type: application/json
+1 < Date: Wed, 26 Jul 2023 08:58:51 GMT
+1 < Retry-After: 59
+1 < Server: nginx/1.21.6
+1 < Vary: Accept-Encoding
+1 < X-Endurance-Cache-Level: 2
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 57
+1 < X-RateLimit-Reset: 1690361991
+1 < X-nginx-cache: WordPress
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+{
+    "message": "Too Many Attempts."
+}
+
+10:58:51.576 status code was: 429, expected: 200, response time: 757, url: https://dummy.restapiexample.com/api/v1/employees, response: {"message":"Too Many Attempts."}
+10:58:51.603 karate.env system property was:  
+10:58:51.613 [print] int var =  10
+10:58:51.615 [print] string var =  John
+10:58:51.621 [print] New value =  15.0
+10:58:51.623 [print] Backgroud variables==>  Google 20
+10:58:51.663 karate.env system property was:  
+10:58:51.676 [print] Helper ==> https://jsonplaceholder.typicode.com
+10:58:51.678 [print] Helper ==> /posts
+10:58:51.679 [print] Helper ==> 24
+10:58:51.683 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":24,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+10:58:52.138 response time in milliseconds: 454.91
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb7181182c12ac-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:53 GMT
+1 < Etag: W/"8b-JTptEcnE3ol+b1LXP9OzYGV83ks"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=B4ONZ%2B6ukBBYcqqyjENdjiZfro%2Bk%2Bn%2Brjf%2FT28NXknBZwfbScqFFxJ0gemsMHg5AGhrl8A8rGsrQOellkKsV2jA5VdO7z7ms1s40%2Fy1fncEJHz2o8J7SOhJFAx0Zg2SnNrrbEfRx6pYm0DJXHisG"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 994
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 24,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+10:58:52.143 request:
+1 > PATCH https://jsonplaceholder.typicode.com/posts/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"title":"new title"}
+
+10:58:52.583 response time in milliseconds: 438.20
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb7183e80041b0-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:53 GMT
+1 < Etag: W/"e3-hNFnEWSw0E6zIsDRtiZ6LX2O/k4"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0%2BIvgItYo6wR7XsRlcI0zYA%2BNsbAsfy8VKIZBdEzIlt6v9xTNv%2BWYF50Pcqlmj5VffR1%2BwmW1NeRX5AiIausN1uP3mHzWfAENU4a3blkVGO07KGDl8LveRZYRjgpBHjAwlww%2FtHhUiqX7peEbcqW"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 993
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "id": 1,
+  "title": "new title",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+10:58:52.628 karate.env system property was:  
+10:58:52.629 [print] https://dummyjson.com
+10:58:52.630 [print] /products
+10:58:52.632 [print] get
+10:58:52.634 [print] 200
+10:58:52.641 karate.env system property was:  
+10:58:52.642 [print] https://dummyjson.com
+10:58:52.645 [print] /products/add
+10:58:52.647 [print] post
+10:58:52.647 [print] 200
+10:58:52.655 karate.env system property was:  
+10:58:52.655 [print] https://dummyjson.com
+10:58:52.656 [print] /products/add
+10:58:52.658 [print] put
+10:58:52.660 [print] 201
+10:58:52.667 karate.env system property was:  
+10:58:52.676 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 503
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":"101","title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.677 java.net.UnknownHostException: dummyjson.com, http call failed after 1 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.677 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.693 karate.env system property was:  
+10:58:52.696 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 502
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":"id","title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.696 java.net.UnknownHostException: dummyjson.com, http call failed after 0 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.696 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.704 karate.env system property was:  
+10:58:52.708 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 505
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":"false","title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.709 java.net.UnknownHostException: dummyjson.com, http call failed after 0 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.709 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.736 karate.env system property was:  
+10:58:52.746 [print] Function value ==> 10
+10:58:52.749 [print] Function value ==> 48
+10:58:52.759 [print] Function value ==> Hello Mirette
+10:58:52.804 karate.env system property was:  
+10:58:52.807 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 501
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":131,"title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.808 java.net.UnknownHostException: dummyjson.com, http call failed after 1 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.808 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.818 karate.env system property was:  
+10:58:52.848 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 501
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":131,"title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.848 java.net.UnknownHostException: dummyjson.com, http call failed after 0 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.848 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.870 karate.env system property was:  
+10:58:52.879 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 499
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":6,"title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.880 java.net.UnknownHostException: dummyjson.com, http call failed after 0 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.880 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.900 karate.env system property was:  
+10:58:52.906 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 501
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":131,"title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+10:58:52.906 java.net.UnknownHostException: dummyjson.com, http call failed after 0 milliseconds for URL: https://dummyjson.com/products/add
+10:58:52.907 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.916 karate.env system property was:  
+10:58:52.919 request:
+1 > GET https://dummyjson.com/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+10:58:52.920 java.net.UnknownHostException: dummyjson.com, http call failed after 0 milliseconds for URL: https://dummyjson.com/products
+10:58:52.920 http request failed: 
+java.net.UnknownHostException: dummyjson.com
+10:58:52.963 karate.env system property was:  
+10:58:52.975 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":12,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+10:58:53.414 response time in milliseconds: 438.63
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb7189189811b1-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:54 GMT
+1 < Etag: W/"8b-qdxIzTbvN2FRkNo5h0HIgw6NVgA"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LT2ide3Lf82gA57KzHUrWlK%2Bws87i9NBEsO6exY4BbMywMRJ1blB%2BQRe%2BKs6aGKFTQDl00tv2DoHBvXwKACDrMQiBK96Y5O9t%2BaDx5kFZ7ltaBSa9o29a1I5wObDUFAZIhc5pmo%2BWMl8n2abxmZv"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 992
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 12,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+10:58:53.416 request:
+2 > PUT https://jsonplaceholder.typicode.com/posts/1
+2 > Accept: application/json
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 122
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+10:58:53.858 response time in milliseconds: 441.26
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 7ecb718bd87e0da1-MRS
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 26 Jul 2023 08:58:54 GMT
+2 < Etag: W/"8b-CvoRSmVCVGGRGIZAIG1xQpZMff0"
+2 < Expires: -1
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Pragma: no-cache
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z9WIHNRopdg5HjsTZtg9VTKrL7xwRUuJTxBijdQSLO0EshKt1axumUQix%2FYAvpt%2BN%2FGFjWYMpioIXFLy6Af%2F5OsQZTmoCZDY1BaTsQ78%2FgiJ1z7qflghqNthrISx%2F7A87qGNleR2vCKe13OxFj4m"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 991
+2 < X-Ratelimit-Reset: 1690361964
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}
+
+10:58:53.874 karate.env system property was:  
+10:58:53.898 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":31,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+10:58:54.352 response time in milliseconds: 452.54
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb718eeca212ab-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:55 GMT
+1 < Etag: W/"8b-/Ir2khVmPqlQXJAWPjwajAK9SMc"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PohAZsCjoOXZOG2qDQu0DctoXvZgfqrXj5SAr8OIM7IndokqWzqsH333KpMB7wLv5B%2BrcP%2BMVeuKZ9IQ%2FG2NyIMeSrQ2%2B6nGZG0PJUa%2BF48%2BkwqtMb6ORImE1nx1t47WsfJ%2F1dMFzKgOAKuqK95u"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 990
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 31,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+10:58:54.354 request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 123
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":55,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+10:58:54.797 response time in milliseconds: 441.34
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb7191b8cf18a5-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:55 GMT
+1 < Etag: W/"8c-0wDu+kvEN/p9JCZfJxa3hs5ei0Y"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0rsRHmbWSSbCe%2F%2BaWMLhffhEct9bGF8wO2Sd0DY9gTtvAF5NE7j58yvixkJMqid4BXvZ8z2VqfLNqTi6IIlyMAzaqja8Rh362StEPoGCxGDLl5M5PKkle7VaFN8oEDipa3rAGqX7Wjr%2FtP2IHEwL"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 989
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 55,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}
+
+10:58:54.807 karate.env system property was:  
+10:58:54.817 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":37,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+10:58:55.274 response time in milliseconds: 456.00
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb719498b9184e-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:56 GMT
+1 < Etag: W/"8b-nUug6DtTr7VcRsf/S7lwPkPKHjI"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8k7S0cZZ3X%2B4DZBKSji2XSxLeMQjnyQnYOiH3viMtVDIpKK0LOOx2dWrr0zx0lHuJkZtMNiVObeRovqvXZZLKlGTCYsNL4JV%2BKnlJH2cixpfw2g%2FGtalM4cEiIESGkBWgtsGMNOv1W8hlv5IVdcw"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 988
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 37,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+10:58:55.287 [print] Calling Feature 37
+10:58:55.293 [print] Calling Feature 51
+10:58:55.297 request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 123
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":37,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+10:58:55.800 response time in milliseconds: 501.59
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb7197df0f41b1-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:56 GMT
+1 < Etag: W/"8c-xyvoZXKa0LwBX5b2+0bQcIYaI5U"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Jgo9aMc6F0piVf8y4xbXUDvEqtybPh2urLjkzSYyWxwEdeZ37V1bYECTyYRyWpLl01FTW6QK9jPb%2B%2FZRq8%2Fx4oNKa0O%2Fp%2FDFOAqCK7rOzhb00nOt0%2FxzRBIahZb%2FH7khEbW2ah%2Bq52ac5%2FHBQRZL"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 987
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 37,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}
+
+10:58:55.835 karate.env system property was:  
+10:58:55.842 [print] Helper ==> https://jsonplaceholder.typicode.com
+10:58:55.842 [print] Helper ==> /posts
+10:58:55.843 [print] Helper ==> 16
+10:58:55.844 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":16,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+10:58:56.301 response time in milliseconds: 455.73
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb719b1fbf0dab-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:57 GMT
+1 < Etag: W/"8b-ybrnQlqWOOgvHQ4u2KULl/lwGVs"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fzK62culuEAJkTi0vLwZzM3LnWDReaGjxJ8gm1j81vQt4LtSOT2VlGIGkjy8VGuES7csQNIHlf21CSofFsRo6S%2BKxJMsoaXLPRazuupqLijCXNoAA%2FbSPMXQS5gN4K80uXMJOaTAlqtI%2BRVDi8gG"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 986
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 16,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+10:58:56.305 request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 123
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":16,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+10:58:56.778 response time in milliseconds: 472.26
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ecb719e1a5416a9-MRS
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Jul 2023 08:58:57 GMT
+1 < Etag: W/"8c-1c3zF587uZxEt/XVt6hWPYROi94"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dH5daGUcOdfJ90iXpQWj8PQbVsRNZIV%2FXTU7JCfnIBHu4v3xZtkqu6AfEYG5rRgvNHnWDgmqxEAdU1dyPpf4qcazysE0dxtvC%2ByKmbyiBB0fyl%2FJ1OJke9SqcXjf0qr1G5FRcQj2%2F30Rr5qHl97N"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 985
+1 < X-Ratelimit-Reset: 1690361964
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 16,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}
+
+s\/28\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/28\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/28\/3.png","https:\/\/i.dummyjson.com\/data\/products\/28\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/28\/thumbnail.jpg"],"price":20,"rating":4.82,"description":"3D led lamp sticker Wall sticker 3d wall art light on\/off button  cell operated (included)","id":28,"title":"3D Embellishment Art Lamp","stock":54,"category":"home-decoration","brand":"LED Lights"},{"discountPercentage":15.34,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/29\/thumbnail.webp","images":["https:\/\/i.dummyjson.com\/data\/products\/29\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/29\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/29\/3.webp","https:\/\/i.dummyjson.com\/data\/products\/29\/4.webp","https:\/\/i.dummyjson.com\/data\/products\/29\/thumbnail.webp"],"price":60,"rating":4.44,"description":"Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate","id":29,"title":"Handcraft Chinese style","stock":7,"category":"home-decoration","brand":"luxury palace"},{"discountPercentage":2.92,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/30\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/30\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/30\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/30\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/30\/thumbnail.jpg"],"price":30,"rating":4.92,"description":"Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality","id":30,"title":"Key Holder","stock":54,"category":"home-decoration","brand":"Golden"}]}, expected: {#[] ##(productsSchema), "total"=#number, skip=#number, limit=#number}, reason: actual value has 1 more key(s) than expected: {total=100, products=[{"discountPercentage":12.96,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/1\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/1\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/1\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/1\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/1\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/1\/thumbnail.jpg"],"price":549,"rating":4.69,"description":"An apple mobile which is nothing like apple","id":1,"title":"iPhone 9","stock":94,"category":"smartphones","brand":"Apple"},{"discountPercentage":17.94,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/2\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/2\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/2\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/2\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/2\/thumbnail.jpg"],"price":899,"rating":4.44,"description":"SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...","id":2,"title":"iPhone X","stock":34,"category":"smartphones","brand":"Apple"},{"discountPercentage":15.46,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/3\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/3\/1.jpg"],"price":1249,"rating":4.09,"description":"Samsung's new variant which goes beyond Galaxy to the Universe","id":3,"title":"Samsung Universe 9","stock":36,"category":"smartphones","brand":"Samsung"},{"discountPercentage":17.91,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/4\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/4\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/4\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/4\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/4\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/4\/thumbnail.jpg"],"price":280,"rating":4.3,"description":"OPPO F19 is officially announced on April 2021.","id":4,"title":"OPPOF19","stock":123,"category":"smartphones","brand":"OPPO"},{"discountPercentage":10.58,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/5\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/5\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/5\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/5\/3.jpg"],"price":499,"rating":4.09,"description":"Huawei\u2019s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.","id":5,"title":"Huawei P30","stock":32,"category":"smartphones","brand":"Huawei"},{"discountPercentage":11.02,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/6\/thumbnail.png","images":["https:\/\/i.dummyjson.com\/data\/products\/6\/1.png","https:\/\/i.dummyjson.com\/data\/products\/6\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/6\/3.png","https:\/\/i.dummyjson.com\/data\/products\/6\/4.jpg"],"price":1749,"rating":4.57,"description":"MacBook Pro 2021 with mini-LED display may launch between September, November","id":6,"title":"MacBook Pro","stock":83,"category":"laptops","brand":"Apple"},{"discountPercentage":4.15,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/7\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/7\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/7\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/7\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/7\/thumbnail.jpg"],"price":1499,"rating":4.25,"description":"Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched","id":7,"title":"Samsung Galaxy Book","stock":50,"category":"laptops","brand":"Samsung"},{"discountPercentage":10.23,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/8\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/8\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/8\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/8\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/8\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/8\/thumbnail.jpg"],"price":1499,"rating":4.43,"description":"Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.","id":8,"title":"Microsoft Surface Laptop 4","stock":68,"category":"laptops","brand":"Microsoft Surface"},{"discountPercentage":11.83,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/9\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/9\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/9\/2.png","https:\/\/i.dummyjson.com\/data\/products\/9\/3.png","https:\/\/i.dummyjson.com\/data\/products\/9\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/9\/thumbnail.jpg"],"price":1099,"rating":4.54,"description":"Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey \u2013 1 Year Warranty","id":9,"title":"Infinix INBOOK","stock":96,"category":"laptops","brand":"Infinix"},{"discountPercentage":6.18,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/10\/thumbnail.jpeg","images":["https:\/\/i.dummyjson.com\/data\/products\/10\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/10\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/10\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/10\/thumbnail.jpeg"],"price":1099,"rating":4.43,"description":"HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10","id":10,"title":"HP Pavilion 15-DK1056WM","stock":89,"category":"laptops","brand":"HP Pavilion"},{"discountPercentage":8.4,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/11\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/11\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/11\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/11\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/11\/thumbnail.jpg"],"price":13,"rating":4.26,"description":"Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil","id":11,"title":"perfume Oil","stock":65,"category":"fragrances","brand":"Impression of Acqua Di Gio"},{"discountPercentage":15.66,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/12\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/12\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/12\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/12\/3.png","https:\/\/i.dummyjson.com\/data\/products\/12\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/12\/thumbnail.jpg"],"price":40,"rating":4,"description":"Royal_Mirage Sport Brown Perfume for Men & Women - 120ml","id":12,"title":"Brown Perfume","stock":52,"category":"fragrances","brand":"Royal_Mirage"},{"discountPercentage":8.14,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/13\/thumbnail.webp","images":["https:\/\/i.dummyjson.com\/data\/products\/13\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/13\/2.png","https:\/\/i.dummyjson.com\/data\/products\/13\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/13\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/13\/thumbnail.webp"],"price":13,"rating":4.59,"description":"Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men","id":13,"title":"Fog Scent Xpressio Perfume","stock":61,"category":"fragrances","brand":"Fog Scent Xpressio"},{"discountPercentage":15.6,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/14\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/14\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/14\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/14\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/14\/thumbnail.jpg"],"price":120,"rating":4.21,"description":"Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil","id":14,"title":"Non-Alcoholic Concentrated Perfume Oil","stock":114,"category":"fragrances","brand":"Al Munakh"},{"discountPercentage":10.99,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/15\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/15\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/15\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/15\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/15\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/15\/thumbnail.jpg"],"price":30,"rating":4.7,"description":"Genuine  Al-Rehab spray perfume from UAE\/Saudi Arabia\/Yemen High Quality","id":15,"title":"Eau De Perfume Spray","stock":105,"category":"fragrances","brand":"Lord - Al-Rehab"},{"discountPercentage":13.31,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/16\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/16\/1.png","https:\/\/i.dummyjson.com\/data\/products\/16\/2.webp","https:\/\/i.dummyjson.com\/data\/products\/16\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/16\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/16\/thumbnail.jpg"],"price":19,"rating":4.83,"description":"L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid","id":16,"title":"Hyaluronic Acid Serum","stock":110,"category":"skincare","brand":"L'Oreal Paris"},{"discountPercentage":4.09,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/17\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/17\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/17\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/17\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/17\/thumbnail.jpg"],"price":12,"rating":4.52,"description":"Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,","id":17,"title":"Tree Oil 30ml","stock":78,"category":"skincare","brand":"Hemani Tea"},{"discountPercentage":13.1,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/18\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/18\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/18\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/18\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/18\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/18\/thumbnail.jpg"],"price":40,"rating":4.56,"description":"Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.","id":18,"title":"Oil Free Moisturizer 100ml","stock":88,"category":"skincare","brand":"Dermive"},{"discountPercentage":10.68,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/19\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/19\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/19\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/19\/3.png","https:\/\/i.dummyjson.com\/data\/products\/19\/thumbnail.jpg"],"price":46,"rating":4.42,"description":"Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m","id":19,"title":"Skin Beauty Serum.","stock":54,"category":"skincare","brand":"ROREC White Rice"},{"discountPercentage":16.99,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/20\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/20\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/20\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/20\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/20\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/20\/thumbnail.jpg"],"price":70,"rating":4.06,"description":"Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.","id":20,"title":"Freckle Treatment Cream- 15gm","stock":140,"category":"skincare","brand":"Fair & Clear"},{"discountPercentage":4.81,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/21\/thumbnail.png","images":["https:\/\/i.dummyjson.com\/data\/products\/21\/1.png","https:\/\/i.dummyjson.com\/data\/products\/21\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/21\/3.jpg"],"price":20,"rating":4.44,"description":"Fine quality Branded Product Keep in a cool and dry place","id":21,"title":"- Daal Masoor 500 grams","stock":133,"category":"groceries","brand":"Saaf & Khaas"},{"discountPercentage":15.58,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/22\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/22\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/22\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/22\/3.jpg"],"price":14,"rating":4.57,"description":"Product details of Bake Parlor Big Elbow Macaroni - 400 gm","id":22,"title":"Elbow Macaroni - 400 gm","stock":146,"category":"groceries","brand":"Bake Parlor Big"},{"discountPercentage":8.04,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/23\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/23\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/23\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/23\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/23\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/23\/thumbnail.jpg"],"price":14,"rating":4.85,"description":"Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item","id":23,"title":"Orange Essence Food Flavou","stock":26,"category":"groceries","brand":"Baking Food Items"},{"discountPercentage":16.8,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/24\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/24\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/24\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/24\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/24\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/24\/thumbnail.jpg"],"price":46,"rating":4.94,"description":"original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji","id":24,"title":"cereals muesli fruit nuts","stock":113,"category":"groceries","brand":"fauji"},{"discountPercentage":13.58,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/25\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/25\/1.png","https:\/\/i.dummyjson.com\/data\/products\/25\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/25\/3.png","https:\/\/i.dummyjson.com\/data\/products\/25\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/25\/thumbnail.jpg"],"price":70,"rating":4.87,"description":"Dry Rose Flower Powder Gulab Powder 50 Gram \u2022 Treats Wounds","id":25,"title":"Gulab Powder 50 Gram","stock":47,"category":"groceries","brand":"Dry Rose"},{"discountPercentage":17.86,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/26\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/26\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/26\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/26\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/26\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/26\/5.jpg","https:\/\/i.dummyjson.com\/data\/products\/26\/thumbnail.jpg"],"price":41,"rating":4.08,"description":"Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf","id":26,"title":"Plant Hanger For Home","stock":131,"category":"home-decoration","brand":"Boho Decor"},{"discountPercentage":15.58,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/27\/thumbnail.webp","images":["https:\/\/i.dummyjson.com\/data\/products\/27\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/27\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/27\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/27\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/27\/thumbnail.webp"],"price":51,"rating":4.41,"description":"Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm","id":27,"title":"Flying Wooden Bird","stock":17,"category":"home-decoration","brand":"Flying Wooden"},{"discountPercentage":16.49,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/28\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/28\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/28\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/28\/3.png","https:\/\/i.dummyjson.com\/data\/products\/28\/4.jpg","https:\/\/i.dummyjson.com\/data\/products\/28\/thumbnail.jpg"],"price":20,"rating":4.82,"description":"3D led lamp sticker Wall sticker 3d wall art light on\/off button  cell operated (included)","id":28,"title":"3D Embellishment Art Lamp","stock":54,"category":"home-decoration","brand":"LED Lights"},{"discountPercentage":15.34,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/29\/thumbnail.webp","images":["https:\/\/i.dummyjson.com\/data\/products\/29\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/29\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/29\/3.webp","https:\/\/i.dummyjson.com\/data\/products\/29\/4.webp","https:\/\/i.dummyjson.com\/data\/products\/29\/thumbnail.webp"],"price":60,"rating":4.44,"description":"Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate","id":29,"title":"Handcraft Chinese style","stock":7,"category":"home-decoration","brand":"luxury palace"},{"discountPercentage":2.92,"thumbnail":"https:\/\/i.dummyjson.com\/data\/products\/30\/thumbnail.jpg","images":["https:\/\/i.dummyjson.com\/data\/products\/30\/1.jpg","https:\/\/i.dummyjson.com\/data\/products\/30\/2.jpg","https:\/\/i.dummyjson.com\/data\/products\/30\/3.jpg","https:\/\/i.dummyjson.com\/data\/products\/30\/thumbnail.jpg"],"price":30,"rating":4.92,"description":"Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality","id":30,"title":"Key Holder","stock":54,"category":"home-decoration","brand":"Golden"}]}

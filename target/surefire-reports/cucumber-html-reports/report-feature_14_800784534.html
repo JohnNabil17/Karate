@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: com/api/automation/postrequest/schemaValidation.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Run</td>
+      <td>26 Jul 2023, 12:03</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/api/automation/postrequest/schemaValidation.feature</td>
+          <td      class="passed"    >15</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">15</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="1231090100">1.231</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/api/automation/postrequest/schemaValidation.feature</span>
+
+
+</div>
+
+        <div class="description indention">Validate the JSON schema
+To validate the JSON schema for POST /products/add</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://dummyjson.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:03:18.413 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.625</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To create the product entry in JSON format</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/products/add'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def body = read(&quot;data/productEntry.json&quot;)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers {Accept:'application/json' , Content-Type:'application/json'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.617</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>12:03:18.420 request:
+1 &gt; POST https://dummyjson.com/products/add
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 501
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummyjson.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;id&quot;:131,&quot;title&quot;:&quot;Bad Title&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;price&quot;:10,&quot;discountPercentage&quot;:10.0,&quot;rating&quot;:10.0,&quot;stock&quot;:10,&quot;stocks&quot;:20,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]}
+
+12:03:19.036 response time in milliseconds: 614.80
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; content-length: 461
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 26 Jul 2023 10:03:20 GMT
+1 &lt; etag: W/&quot;1cd-EqbgD10UMYEbWMeJnN8j9SdM+Oc&quot;
+1 &lt; server: railway
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 120
+1 &lt; x-ratelimit-remaining: 113
+1 &lt; x-ratelimit-reset: 1690365827
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;id&quot;:101,&quot;title&quot;:&quot;Bad Title&quot;,&quot;price&quot;:10,&quot;stock&quot;:10,&quot;rating&quot;:10,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;],&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: '#number',
+  &quot;title&quot;: '#string',
+  &quot;price&quot;: '#number',
+  &quot;stock&quot;: '#number',
+  &quot;rating&quot;: '#number',
+  &quot;images&quot;: '#[] #string',
+  &quot;thumbnail&quot;: '#string',
+  &quot;description&quot;: '#string',
+  &quot;brand&quot;: '#string',
+  &quot;category&quot;: '#string'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://dummyjson.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>12:03:19.045 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.605</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Schema Validation for GET end point</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/products'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.597</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>12:03:19.047 request:
+1 &gt; GET https://dummyjson.com/products
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dummyjson.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+12:03:19.641 response time in milliseconds: 592.45
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 26 Jul 2023 10:03:20 GMT
+1 &lt; etag: W/&quot;4158-8FQrjkGNH7RC18HQ7Qm+2sUS6Ms&quot;
+1 &lt; server: railway
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; transfer-encoding: chunked
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 120
+1 &lt; x-ratelimit-remaining: 111
+1 &lt; x-ratelimit-reset: 1690365827
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;products&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;iPhone 9&quot;,&quot;description&quot;:&quot;An apple mobile which is nothing like apple&quot;,&quot;price&quot;:549,&quot;discountPercentage&quot;:12.96,&quot;rating&quot;:4.69,&quot;stock&quot;:94,&quot;brand&quot;:&quot;Apple&quot;,&quot;category&quot;:&quot;smartphones&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]},{&quot;id&quot;:2,&quot;title&quot;:&quot;iPhone X&quot;,&quot;description&quot;:&quot;SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...&quot;,&quot;price&quot;:899,&quot;discountPercentage&quot;:17.94,&quot;rating&quot;:4.44,&quot;stock&quot;:34,&quot;brand&quot;:&quot;Apple&quot;,&quot;category&quot;:&quot;smartphones&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/2/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/2/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/2/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/2/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/2/thumbnail.jpg&quot;]},{&quot;id&quot;:3,&quot;title&quot;:&quot;Samsung Universe 9&quot;,&quot;description&quot;:&quot;Samsung's new variant which goes beyond Galaxy to the Universe&quot;,&quot;price&quot;:1249,&quot;discountPercentage&quot;:15.46,&quot;rating&quot;:4.09,&quot;stock&quot;:36,&quot;brand&quot;:&quot;Samsung&quot;,&quot;category&quot;:&quot;smartphones&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/3/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/3/1.jpg&quot;]},{&quot;id&quot;:4,&quot;title&quot;:&quot;OPPOF19&quot;,&quot;description&quot;:&quot;OPPO F19 is officially announced on April 2021.&quot;,&quot;price&quot;:280,&quot;discountPercentage&quot;:17.91,&quot;rating&quot;:4.3,&quot;stock&quot;:123,&quot;brand&quot;:&quot;OPPO&quot;,&quot;category&quot;:&quot;smartphones&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/4/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/4/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/4/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/4/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/4/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/4/thumbnail.jpg&quot;]},{&quot;id&quot;:5,&quot;title&quot;:&quot;Huawei P30&quot;,&quot;description&quot;:&quot;Huawei&rsquo;s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.&quot;,&quot;price&quot;:499,&quot;discountPercentage&quot;:10.58,&quot;rating&quot;:4.09,&quot;stock&quot;:32,&quot;brand&quot;:&quot;Huawei&quot;,&quot;category&quot;:&quot;smartphones&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/5/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/5/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/5/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/5/3.jpg&quot;]},{&quot;id&quot;:6,&quot;title&quot;:&quot;MacBook Pro&quot;,&quot;description&quot;:&quot;MacBook Pro 2021 with mini-LED display may launch between September, November&quot;,&quot;price&quot;:1749,&quot;discountPercentage&quot;:11.02,&quot;rating&quot;:4.57,&quot;stock&quot;:83,&quot;brand&quot;:&quot;Apple&quot;,&quot;category&quot;:&quot;laptops&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/6/thumbnail.png&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/6/1.png&quot;,&quot;https://i.dummyjson.com/data/products/6/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/6/3.png&quot;,&quot;https://i.dummyjson.com/data/products/6/4.jpg&quot;]},{&quot;id&quot;:7,&quot;title&quot;:&quot;Samsung Galaxy Book&quot;,&quot;description&quot;:&quot;Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched&quot;,&quot;price&quot;:1499,&quot;discountPercentage&quot;:4.15,&quot;rating&quot;:4.25,&quot;stock&quot;:50,&quot;brand&quot;:&quot;Samsung&quot;,&quot;category&quot;:&quot;laptops&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/7/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/7/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/7/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/7/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/7/thumbnail.jpg&quot;]},{&quot;id&quot;:8,&quot;title&quot;:&quot;Microsoft Surface Laptop 4&quot;,&quot;description&quot;:&quot;Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.&quot;,&quot;price&quot;:1499,&quot;discountPercentage&quot;:10.23,&quot;rating&quot;:4.43,&quot;stock&quot;:68,&quot;brand&quot;:&quot;Microsoft Surface&quot;,&quot;category&quot;:&quot;laptops&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/8/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/8/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/8/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/8/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/8/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/8/thumbnail.jpg&quot;]},{&quot;id&quot;:9,&quot;title&quot;:&quot;Infinix INBOOK&quot;,&quot;description&quot;:&quot;Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey &ndash; 1 Year Warranty&quot;,&quot;price&quot;:1099,&quot;discountPercentage&quot;:11.83,&quot;rating&quot;:4.54,&quot;stock&quot;:96,&quot;brand&quot;:&quot;Infinix&quot;,&quot;category&quot;:&quot;laptops&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/9/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/9/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/9/2.png&quot;,&quot;https://i.dummyjson.com/data/products/9/3.png&quot;,&quot;https://i.dummyjson.com/data/products/9/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/9/thumbnail.jpg&quot;]},{&quot;id&quot;:10,&quot;title&quot;:&quot;HP Pavilion 15-DK1056WM&quot;,&quot;description&quot;:&quot;HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10&quot;,&quot;price&quot;:1099,&quot;discountPercentage&quot;:6.18,&quot;rating&quot;:4.43,&quot;stock&quot;:89,&quot;brand&quot;:&quot;HP Pavilion&quot;,&quot;category&quot;:&quot;laptops&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/10/thumbnail.jpeg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/10/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/10/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/10/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/10/thumbnail.jpeg&quot;]},{&quot;id&quot;:11,&quot;title&quot;:&quot;perfume Oil&quot;,&quot;description&quot;:&quot;Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil&quot;,&quot;price&quot;:13,&quot;discountPercentage&quot;:8.4,&quot;rating&quot;:4.26,&quot;stock&quot;:65,&quot;brand&quot;:&quot;Impression of Acqua Di Gio&quot;,&quot;category&quot;:&quot;fragrances&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/11/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/11/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/11/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/11/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/11/thumbnail.jpg&quot;]},{&quot;id&quot;:12,&quot;title&quot;:&quot;Brown Perfume&quot;,&quot;description&quot;:&quot;Royal_Mirage Sport Brown Perfume for Men &amp; Women - 120ml&quot;,&quot;price&quot;:40,&quot;discountPercentage&quot;:15.66,&quot;rating&quot;:4,&quot;stock&quot;:52,&quot;brand&quot;:&quot;Royal_Mirage&quot;,&quot;category&quot;:&quot;fragrances&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/12/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/12/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/12/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/12/3.png&quot;,&quot;https://i.dummyjson.com/data/products/12/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/12/thumbnail.jpg&quot;]},{&quot;id&quot;:13,&quot;title&quot;:&quot;Fog Scent Xpressio Perfume&quot;,&quot;description&quot;:&quot;Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men&quot;,&quot;price&quot;:13,&quot;discountPercentage&quot;:8.14,&quot;rating&quot;:4.59,&quot;stock&quot;:61,&quot;brand&quot;:&quot;Fog Scent Xpressio&quot;,&quot;category&quot;:&quot;fragrances&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/13/thumbnail.webp&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/13/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/13/2.png&quot;,&quot;https://i.dummyjson.com/data/products/13/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/13/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/13/thumbnail.webp&quot;]},{&quot;id&quot;:14,&quot;title&quot;:&quot;Non-Alcoholic Concentrated Perfume Oil&quot;,&quot;description&quot;:&quot;Original Al Munakh&reg; by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil&quot;,&quot;price&quot;:120,&quot;discountPercentage&quot;:15.6,&quot;rating&quot;:4.21,&quot;stock&quot;:114,&quot;brand&quot;:&quot;Al Munakh&quot;,&quot;category&quot;:&quot;fragrances&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/14/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/14/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/14/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/14/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/14/thumbnail.jpg&quot;]},{&quot;id&quot;:15,&quot;title&quot;:&quot;Eau De Perfume Spray&quot;,&quot;description&quot;:&quot;Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality&quot;,&quot;price&quot;:30,&quot;discountPercentage&quot;:10.99,&quot;rating&quot;:4.7,&quot;stock&quot;:105,&quot;brand&quot;:&quot;Lord - Al-Rehab&quot;,&quot;category&quot;:&quot;fragrances&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/15/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/15/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/15/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/15/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/15/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/15/thumbnail.jpg&quot;]},{&quot;id&quot;:16,&quot;title&quot;:&quot;Hyaluronic Acid Serum&quot;,&quot;description&quot;:&quot;L'Or&Atilde;&copy;al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid&quot;,&quot;price&quot;:19,&quot;discountPercentage&quot;:13.31,&quot;rating&quot;:4.83,&quot;stock&quot;:110,&quot;brand&quot;:&quot;L'Oreal Paris&quot;,&quot;category&quot;:&quot;skincare&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/16/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/16/1.png&quot;,&quot;https://i.dummyjson.com/data/products/16/2.webp&quot;,&quot;https://i.dummyjson.com/data/products/16/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/16/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/16/thumbnail.jpg&quot;]},{&quot;id&quot;:17,&quot;title&quot;:&quot;Tree Oil 30ml&quot;,&quot;description&quot;:&quot;Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,&quot;,&quot;price&quot;:12,&quot;discountPercentage&quot;:4.09,&quot;rating&quot;:4.52,&quot;stock&quot;:78,&quot;brand&quot;:&quot;Hemani Tea&quot;,&quot;category&quot;:&quot;skincare&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/17/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/17/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/17/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/17/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/17/thumbnail.jpg&quot;]},{&quot;id&quot;:18,&quot;title&quot;:&quot;Oil Free Moisturizer 100ml&quot;,&quot;description&quot;:&quot;Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid &amp; sunscreen.&quot;,&quot;price&quot;:40,&quot;discountPercentage&quot;:13.1,&quot;rating&quot;:4.56,&quot;stock&quot;:88,&quot;brand&quot;:&quot;Dermive&quot;,&quot;category&quot;:&quot;skincare&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/18/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/18/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/18/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/18/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/18/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/18/thumbnail.jpg&quot;]},{&quot;id&quot;:19,&quot;title&quot;:&quot;Skin Beauty Serum.&quot;,&quot;description&quot;:&quot;Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m&quot;,&quot;price&quot;:46,&quot;discountPercentage&quot;:10.68,&quot;rating&quot;:4.42,&quot;stock&quot;:54,&quot;brand&quot;:&quot;ROREC White Rice&quot;,&quot;category&quot;:&quot;skincare&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/19/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/19/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/19/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/19/3.png&quot;,&quot;https://i.dummyjson.com/data/products/19/thumbnail.jpg&quot;]},{&quot;id&quot;:20,&quot;title&quot;:&quot;Freckle Treatment Cream- 15gm&quot;,&quot;description&quot;:&quot;Fair &amp; Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.&quot;,&quot;price&quot;:70,&quot;discountPercentage&quot;:16.99,&quot;rating&quot;:4.06,&quot;stock&quot;:140,&quot;brand&quot;:&quot;Fair &amp; Clear&quot;,&quot;category&quot;:&quot;skincare&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/20/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/20/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/20/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/20/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/20/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/20/thumbnail.jpg&quot;]},{&quot;id&quot;:21,&quot;title&quot;:&quot;- Daal Masoor 500 grams&quot;,&quot;description&quot;:&quot;Fine quality Branded Product Keep in a cool and dry place&quot;,&quot;price&quot;:20,&quot;discountPercentage&quot;:4.81,&quot;rating&quot;:4.44,&quot;stock&quot;:133,&quot;brand&quot;:&quot;Saaf &amp; Khaas&quot;,&quot;category&quot;:&quot;groceries&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/21/thumbnail.png&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/21/1.png&quot;,&quot;https://i.dummyjson.com/data/products/21/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/21/3.jpg&quot;]},{&quot;id&quot;:22,&quot;title&quot;:&quot;Elbow Macaroni - 400 gm&quot;,&quot;description&quot;:&quot;Product details of Bake Parlor Big Elbow Macaroni - 400 gm&quot;,&quot;price&quot;:14,&quot;discountPercentage&quot;:15.58,&quot;rating&quot;:4.57,&quot;stock&quot;:146,&quot;brand&quot;:&quot;Bake Parlor Big&quot;,&quot;category&quot;:&quot;groceries&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/22/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/22/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/22/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/22/3.jpg&quot;]},{&quot;id&quot;:23,&quot;title&quot;:&quot;Orange Essence Food Flavou&quot;,&quot;description&quot;:&quot;Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item&quot;,&quot;price&quot;:14,&quot;discountPercentage&quot;:8.04,&quot;rating&quot;:4.85,&quot;stock&quot;:26,&quot;brand&quot;:&quot;Baking Food Items&quot;,&quot;category&quot;:&quot;groceries&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/23/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/23/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/23/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/23/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/23/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/23/thumbnail.jpg&quot;]},{&quot;id&quot;:24,&quot;title&quot;:&quot;cereals muesli fruit nuts&quot;,&quot;description&quot;:&quot;original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji&quot;,&quot;price&quot;:46,&quot;discountPercentage&quot;:16.8,&quot;rating&quot;:4.94,&quot;stock&quot;:113,&quot;brand&quot;:&quot;fauji&quot;,&quot;category&quot;:&quot;groceries&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/24/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/24/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/24/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/24/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/24/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/24/thumbnail.jpg&quot;]},{&quot;id&quot;:25,&quot;title&quot;:&quot;Gulab Powder 50 Gram&quot;,&quot;description&quot;:&quot;Dry Rose Flower Powder Gulab Powder 50 Gram &bull; Treats Wounds&quot;,&quot;price&quot;:70,&quot;discountPercentage&quot;:13.58,&quot;rating&quot;:4.87,&quot;stock&quot;:47,&quot;brand&quot;:&quot;Dry Rose&quot;,&quot;category&quot;:&quot;groceries&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/25/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/25/1.png&quot;,&quot;https://i.dummyjson.com/data/products/25/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/25/3.png&quot;,&quot;https://i.dummyjson.com/data/products/25/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/25/thumbnail.jpg&quot;]},{&quot;id&quot;:26,&quot;title&quot;:&quot;Plant Hanger For Home&quot;,&quot;description&quot;:&quot;Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf&quot;,&quot;price&quot;:41,&quot;discountPercentage&quot;:17.86,&quot;rating&quot;:4.08,&quot;stock&quot;:131,&quot;brand&quot;:&quot;Boho Decor&quot;,&quot;category&quot;:&quot;home-decoration&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/26/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/26/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/26/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/26/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/26/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/26/5.jpg&quot;,&quot;https://i.dummyjson.com/data/products/26/thumbnail.jpg&quot;]},{&quot;id&quot;:27,&quot;title&quot;:&quot;Flying Wooden Bird&quot;,&quot;description&quot;:&quot;Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm&quot;,&quot;price&quot;:51,&quot;discountPercentage&quot;:15.58,&quot;rating&quot;:4.41,&quot;stock&quot;:17,&quot;brand&quot;:&quot;Flying Wooden&quot;,&quot;category&quot;:&quot;home-decoration&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/27/thumbnail.webp&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/27/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/27/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/27/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/27/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/27/thumbnail.webp&quot;]},{&quot;id&quot;:28,&quot;title&quot;:&quot;3D Embellishment Art Lamp&quot;,&quot;description&quot;:&quot;3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)&quot;,&quot;price&quot;:20,&quot;discountPercentage&quot;:16.49,&quot;rating&quot;:4.82,&quot;stock&quot;:54,&quot;brand&quot;:&quot;LED Lights&quot;,&quot;category&quot;:&quot;home-decoration&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/28/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/28/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/28/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/28/3.png&quot;,&quot;https://i.dummyjson.com/data/products/28/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/28/thumbnail.jpg&quot;]},{&quot;id&quot;:29,&quot;title&quot;:&quot;Handcraft Chinese style&quot;,&quot;description&quot;:&quot;Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate&quot;,&quot;price&quot;:60,&quot;discountPercentage&quot;:15.34,&quot;rating&quot;:4.44,&quot;stock&quot;:7,&quot;brand&quot;:&quot;luxury palace&quot;,&quot;category&quot;:&quot;home-decoration&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/29/thumbnail.webp&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/29/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/29/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/29/3.webp&quot;,&quot;https://i.dummyjson.com/data/products/29/4.webp&quot;,&quot;https://i.dummyjson.com/data/products/29/thumbnail.webp&quot;]},{&quot;id&quot;:30,&quot;title&quot;:&quot;Key Holder&quot;,&quot;description&quot;:&quot;Attractive DesignMetallic materialFour key hooksReliable &amp; DurablePremium Quality&quot;,&quot;price&quot;:30,&quot;discountPercentage&quot;:2.92,&quot;rating&quot;:4.92,&quot;stock&quot;:54,&quot;brand&quot;:&quot;Golden&quot;,&quot;category&quot;:&quot;home-decoration&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/30/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/30/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/30/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/30/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/30/thumbnail.jpg&quot;]}],&quot;total&quot;:100,&quot;skip&quot;:0,&quot;limit&quot;:30}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mainSchema = {&quot;products&quot;: '#[] #object', &quot;total&quot;: '#number',&quot;skip&quot;: '#number',&quot;limit&quot;: '#number'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>'#(mainSchema)'</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

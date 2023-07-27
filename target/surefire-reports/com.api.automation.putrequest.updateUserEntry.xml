@@ -1,0 +1,116 @@
+<testsuite failures="0" name="com/api/automation/putrequest/updateUserEntry.feature" skipped="0" tests="4" time="3.417624">
+  <testcase classname="com.api.automation.putrequest.updateUserEntry" name="To update the user Entry for existing user in JSON format" time="0.847286">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given path '/posts' ....................................................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def userId = getRandomValue() ........................................... passed
+And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"} . passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method post .......................................................... passed
+And status 201 ............................................................ passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.putrequest.updateUserEntry" name="To update the user Entry for existing user in JSON format by calling another feature file" time="0.856552">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given path '/posts' ....................................................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def userId = getRandomValue() ........................................... passed
+And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"} . passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method post .......................................................... passed
+And status 201 ............................................................ passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given call read("../createUserEntry.feature") ............................. passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.putrequest.updateUserEntry" name="To update the user Entry for existing uesr in JSON format by calling another feature file shared context" time="0.845971">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given path '/posts' ....................................................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def userId = getRandomValue() ........................................... passed
+And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"} . passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method post .......................................................... passed
+And status 201 ............................................................ passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given call read("../createUserEntry.feature") ............................. passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def postRequest = call read("../createUserEntry.feature") ............... passed
+And print "Calling Feature", postRequest.userId ........................... passed
+And print "Calling Feature", postRequest.getRandomValue() ................. passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* def responseBody = karate.jsonPath(response, "$[?(@.userId == " + postRequest.userId + " &amp;&amp; @.id==1)].body") . passed
+And match responseBody == ["one word"] .................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.putrequest.updateUserEntry" name="To update the user entry for existing user in JSON format by calling another feature file with variables" time="0.867815">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given path '/posts' ....................................................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def userId = getRandomValue() ........................................... passed
+And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"} . passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method post .......................................................... passed
+And status 201 ............................................................ passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+Given call read("../createUserEntry.feature") ............................. passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def postRequest = call read("../createUserEntry.feature") ............... passed
+And print "Calling Feature", postRequest.userId ........................... passed
+And print "Calling Feature", postRequest.getRandomValue() ................. passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* def responseBody = karate.jsonPath(response, "$[?(@.userId == " + postRequest.userId + " &amp;&amp; @.id==1)].body") . passed
+And match responseBody == ["one word"] .................................... passed
+Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def userId = getRandomValue() ........................................... passed
+* def postRequest = call read("../createUserEntryWithVariables.feature") {_url: 'https://jsonplaceholder.typicode.com' , _path: '/posts', _userId: '#(userId)'} . passed
+Given path '/posts/1' ..................................................... passed
+And request ............................................................... passed
+And headers {Accept: 'application/json' , Content-Type: 'application/json'} . passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* def responseBody = karate.jsonPath(response, "$[?(@.userId == " + userId + " &amp;&amp; @.id==1)].body") . passed
+And match responseBody == ["one word"] .................................... passed</system-out>
+  </testcase>
+</testsuite>

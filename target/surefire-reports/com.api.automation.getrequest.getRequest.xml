@@ -1,0 +1,12 @@
+<testsuite failures="0" name="com/api/automation/getrequest/getRequest.feature" skipped="0" tests="1" time="1.992734">
+  <testcase classname="com.api.automation.getrequest.getRequest" name="To get all the data from application in JSON format and validate its content" time="1.992734">
+    <system-out>Given url 'https://dummy.restapiexample.com/api/v1' ....................... passed
+Given path '/employees' ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.data.[0].id == 1 ....................................... passed
+And match response.data.[2].employee_salary == 86000 ...................... passed</system-out>
+  </testcase>
+</testsuite>

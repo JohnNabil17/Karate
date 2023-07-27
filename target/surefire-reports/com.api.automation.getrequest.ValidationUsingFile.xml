@@ -1,0 +1,17 @@
+<testsuite failures="1" name="com/api/automation/getrequest/ValidationUsingFile.feature" skipped="0" tests="1" time="0.832837">
+  <testcase classname="com.api.automation.getrequest.ValidationUsingFile" name="To get the data in JSON format and validate from file" time="0.832837">
+    <failure message="ValidationUsingFile.feature:11 - status code was: 429, expected: 200, response time: 828, url: https://dummy.restapiexample.com/api/v1/employees, response: {&quot;message&quot;:&quot;Too Many Attempts.&quot;}">Given url 'https://dummy.restapiexample.com/api/v1' ....................... passed
+Given path '/employees' ................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: ValidationUsingFile.feature:11 - status code was: 429, expected: 200, response time: 828, url: https://dummy.restapiexample.com/api/v1/employees, response: {"message":"Too Many Attempts."}&#13;
+	at ✽.Then status 200 (ValidationUsingFile.feature:11)&#13;
+
+* def actualResponse = read("../JsonReader.json") ......................... skipped
+And match response == actualResponse ...................................... skipped
+And print , actualResponse ................................................ skipped</failure>
+  </testcase>
+</testsuite>

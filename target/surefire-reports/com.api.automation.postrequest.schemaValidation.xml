@@ -1,0 +1,29 @@
+<testsuite failures="0" name="com/api/automation/postrequest/schemaValidation.feature" skipped="0" tests="2" time="1.23109">
+  <testcase classname="com.api.automation.postrequest.schemaValidation" name="To create the product entry in JSON format" time="0.625619">
+    <system-out>Given url 'https://dummyjson.com' ......................................... passed
+Given path '/products/add' ................................................ passed
+* def body = read("data/productEntry.json") ............................... passed
+And request body .......................................................... passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method post .......................................................... passed
+And status 200 ............................................................ passed
+And match response == ..................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.api.automation.postrequest.schemaValidation" name="Schema Validation for GET end point" time="0.605471">
+    <system-out>Given url 'https://dummyjson.com' ......................................... passed
+Given path '/products/add' ................................................ passed
+* def body = read("data/productEntry.json") ............................... passed
+And request body .......................................................... passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method post .......................................................... passed
+And status 200 ............................................................ passed
+And match response == ..................................................... passed
+Given url 'https://dummyjson.com' ......................................... passed
+Given path '/products' .................................................... passed
+And header Accept = 'application/json' .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def mainSchema = {"products": '#[] #object', "total": '#number',"skip": '#number',"limit": '#number'} . passed
+And match response == ..................................................... passed</system-out>
+  </testcase>
+</testsuite>

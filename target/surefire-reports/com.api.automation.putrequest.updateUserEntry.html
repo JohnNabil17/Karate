@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>com.api.automation.putrequest.updateUserEntry</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">4</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2023-07-26 12:03:20 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:7]">[1:7] To update the user Entry for existing user in JSON format </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:34]">[2:34] To update the user Entry for existing user in JSON format by calling another feature file </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3:53]">[3:53] To update the user Entry for existing uesr in JSON format by calling another feature file shared context </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[4:77]">[4:77] To update the user entry for existing user in JSON format by calling another feature file with variables </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/api/automation/putrequest/updateUserEntry.feature</span><span class="feature-description">To test the updation of user entry in the test application | Test the end point PUT /posts</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:7]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">To update the user Entry for existing user in JSON format </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 847</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:7]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:7]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">12:03:18.492 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Create a new user entry</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Update the job entry using PUT request</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Using jsonPath verify the updation of details in user entry</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given path '/posts'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">* def getRandomValue = function(){return Math.floor((100) * Math.random());}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">* def userId = getRandomValue()</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"}</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">And headers {Accept:'application/json' , Content-Type:'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">414</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">12:03:18.500 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 122
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":63,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+12:03:18.913 response time in milliseconds: 412.22
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcfe8ebe63cb1-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 139
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:19 GMT
+1 &lt; Etag: W/"8b-alRb71UnSDRZB8obLJVPUHYY+cU"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pkLvvtFD%2FsG3rUZQEt3WO%2BaiQ5E%2FeVzUO%2BewYrg3PwLjmiWxtzS3d8rsqEGgRSzXLZYncP%2BKcJASyj%2F841cN57cP3EKuX8zPCBLzaN3nuSkyC%2B%2Bg0rdHGPSXbQ0D5dhTuSrPcp6TSpS9y%2BZYen62"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 991
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 63,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">And status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># PUT request</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">Given path '/posts/1'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="10">{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+    }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">And headers {Accept: 'application/json' , Content-Type: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">When method put</div>
+                        </div>
+                        <div class="time-cell passed">426</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">12:03:18.916 request:
+2 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+2 &gt; Accept: application/json
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 122
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: jsonplaceholder.typicode.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":1,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+12:03:19.340 response time in milliseconds: 423.13
+2 &lt; 200
+2 &lt; Access-Control-Allow-Credentials: true
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 7ecbcfeb895af0f8-CDG
+2 &lt; Cache-Control: no-cache
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Wed, 26 Jul 2023 10:03:20 GMT
+2 &lt; Etag: W/"8b-CvoRSmVCVGGRGIZAIG1xQpZMff0"
+2 &lt; Expires: -1
+2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 &lt; Pragma: no-cache
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kGuEjokiuAJuPe%2Br7QjTCBNzRfaeAw3PdHiVxxjrZPO%2B22X7keQ28bxtXUXv562Bw2yJGJg7%2BLRf867yDJ1Fev%2FGs0SLGiHwnzA7HpkVq5QMTVSQYTOzL%2FoK9HABmhPSmqzUcMZRGV5IjkZGIVWF"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin, Accept-Encoding
+2 &lt; Via: 1.1 vegur
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Powered-By: Express
+2 &lt; X-Ratelimit-Limit: 1000
+2 &lt; X-Ratelimit-Remaining: 989
+2 &lt; X-Ratelimit-Reset: 1690365804
+2 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:34]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:34]</span><span class="scenario-name">To update the user Entry for existing user in JSON format by calling another feature file </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 857</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:34]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">12:03:18.535 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># &lt;Gherkin keyword&gt; &lt;call&gt; &lt;read(&lt;location of file&gt;)&gt;</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">Given call read("../createUserEntry.feature")</div>
+                        </div>
+                        <div class="time-cell passed">450</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">com/api/automation/createUserEntry.feature</div>
+                        </div>
+                        <div class="time-cell passed">438</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And path '/posts'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def getRandomValue = function(){return Math.floor((100) * Math.random());}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def userId = getRandomValue()</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And headers {Accept:'application/json' , Content-Type:'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">435</div>
+                    </div>
+                    <div class="preformatted" data-parent="22">12:03:18.552 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 122
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":11,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+12:03:18.985 response time in milliseconds: 432.94
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcfe95c7902bf-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 139
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:20 GMT
+1 &lt; Etag: W/"8b-1+yfJH5me4ejduiDV1+eEBdobNI"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=l%2FtcIb9eNKQZ%2Fu8PjdPsYI0cqvcRKSLj6U6LPz35yg2LxYFE0i3j2zJTOVEcPXMBRVq5PNMkL9KMOc%2FszPt1eUvzYhFxrWJWZ6ReWhFPQychtGej4fJM5vUOGHWGo%2F816aNIf9t6NdUcokOJa65S"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 990
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 11,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># PUT request</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">Given path '/posts/1'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="25">{
+  "userId": 55,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+    }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">And headers {Accept: 'application/json' , Content-Type: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">When method put</div>
+                        </div>
+                        <div class="time-cell passed">405</div>
+                    </div>
+                    <div class="preformatted" data-parent="27">12:03:18.988 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 123
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":55,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+12:03:19.392 response time in milliseconds: 402.71
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcfebe9920078-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:20 GMT
+1 &lt; Etag: W/"8c-0wDu+kvEN/p9JCZfJxa3hs5ei0Y"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tKgtfX%2FW4u9aj9I79U0gmlNN%2Bt1Fpq1kjPoWYMoGlB8JxY4yGVmeBhbbHDv6HcHxaxTjTZou3A6RJQDExamfSX0SMMjP8THBXgCw1uYbDv2aqc%2F0MZV4pFhgIGSPt3TFlEjS3eOsg%2BElFHirlONp"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 987
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 55,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3:53]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [3:53]</span><span class="scenario-name">To update the user Entry for existing uesr in JSON format by calling another feature file shared context </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 846</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3:53]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:53]bg">
+                        <div class="step-container" id="29">
+                            <div class="step-ref bg-step">29</div>
+                            <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="29">12:03:19.346 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># &lt;Gherkin keyword&gt; &lt;call&gt; &lt;read(&lt;location of file&gt;)&gt;</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Given call read("../createUserEntry.feature")</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">* def postRequest = call read("../createUserEntry.feature")</div>
+                        </div>
+                        <div class="time-cell passed">406</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">com/api/automation/createUserEntry.feature</div>
+                        </div>
+                        <div class="time-cell passed">400</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And path '/posts'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def getRandomValue = function(){return Math.floor((100) * Math.random());}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def userId = getRandomValue()</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request {"userId": '#(userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And headers {Accept:'application/json' , Content-Type:'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">398</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">12:03:19.354 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 122
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":68,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+12:03:19.751 response time in milliseconds: 395.98
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcfee2faa03c5-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 139
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:20 GMT
+1 &lt; Etag: W/"8b-zAfXUwJThVnRmP1PHdOf/Kqv7Fk"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kJu6mwZ0oZ3UFUr62Tzl0aLMvFA6iuivqZ9aP7fZ0wmzkwEE%2FYfDHiN567H%2BC2MrN1FD8Eo87QZp%2Bz44YjpiRxMd3CIQFkjRxCf37OxGsA8TYap2fJGY1NftUMZS4HQeYVm5yyQu6eXeQ5u9Opje"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 986
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 68,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref passed">39</div>
+                            <div class="step-cell passed">And print "Calling Feature", postRequest.userId</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="preformatted" data-parent="39">12:03:19.759 [print] Calling Feature 68</div>
+                    <div class="step-row">
+                        <div class="step-container" id="40">
+                            <div class="step-ref passed">40</div>
+                            <div class="step-cell passed">And print "Calling Feature", postRequest.getRandomValue()</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="40">12:03:19.763 [print] Calling Feature 64</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># PUT request</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="41">
+                            <div class="step-ref passed">41</div>
+                            <div class="step-cell passed">Given path '/posts/1'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="42">
+                            <div class="step-ref passed">42</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="42">{
+  "userId": '#(postRequest.userId)',
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+    }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="43">
+                            <div class="step-ref passed">43</div>
+                            <div class="step-cell passed">And headers {Accept: 'application/json' , Content-Type: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44">
+                            <div class="step-ref passed">44</div>
+                            <div class="step-cell passed">When method put</div>
+                        </div>
+                        <div class="time-cell passed">408</div>
+                    </div>
+                    <div class="preformatted" data-parent="44">12:03:19.768 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 123
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":68,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+12:03:20.174 response time in milliseconds: 405.69
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcff0cb100209-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:21 GMT
+1 &lt; Etag: W/"8c-45jbLbDJZEGtmM8+19vPGYzcWaY"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HjlP2j2lLzoxvW321Q7U2dSZCOQ5WHq1%2B6N%2Fw9GRsRswhi4ETkXW%2FwNaz%2BC8JxjY50EHsGxZS63SuwMcalN6SjV8C1hU4qwYxT7RPuYSbPHcCONUR7CwKIMIWDCYZFs7whSs2d2UVXRkCa%2FtqA0l"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 982
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 68,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="45">
+                            <div class="step-ref passed">45</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref passed">46</div>
+                            <div class="step-cell passed">* def responseBody = karate.jsonPath(response, "$[?(@.userId == " + postRequest.userId + " &amp;&amp; @.id==1)].body")</div>
+                        </div>
+                        <div class="time-cell passed">17</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref passed">47</div>
+                            <div class="step-cell passed">And match responseBody == ["one word"]</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[4:77]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [4:77]</span><span class="scenario-name">To update the user entry for existing user in JSON format by calling another feature file with variables </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 868</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[4:77]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[4:77]bg">
+                        <div class="step-container" id="48">
+                            <div class="step-ref bg-step">48</div>
+                            <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="48">12:03:19.390 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># &lt;Gherkin keyword&gt; &lt;call&gt; &lt;read(&lt;location of file&gt;)&gt;</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Given call read("../createUserEntry.feature") { var1:value , var2:value}</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="49">
+                            <div class="step-ref passed">49</div>
+                            <div class="step-cell passed">* def getRandomValue = function(){return Math.floor((100) * Math.random());}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="50">
+                            <div class="step-ref passed">50</div>
+                            <div class="step-cell passed">* def userId = getRandomValue()</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref passed">51</div>
+                            <div class="step-cell passed">* def postRequest = call read("../createUserEntryWithVariables.feature") {_url: 'https://jsonplaceholder.typicode.com' , _path: '/posts', _userId: '#(userId)'}</div>
+                        </div>
+                        <div class="time-cell passed">451</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">com/api/automation/createUserEntryWithVariables.feature</div>
+                        </div>
+                        <div class="time-cell passed">441</div>
+                    </div>
+                    <div class="callarg-container" data-parent="51.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "_url": "https://jsonplaceholder.typicode.com",
+  "_path": "/posts",
+  "_userId": 84
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="52">
+                            <div class="step-ref passed">52</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given url _url</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="53">
+                            <div class="step-ref passed">53</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And path _path</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="54">
+                            <div class="step-ref passed">54</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And print "Helper ==&gt;", _url</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="54">12:03:19.413 [print] Helper ==&gt; https://jsonplaceholder.typicode.com</div>
+                    <div class="step-row">
+                        <div class="step-container" id="55">
+                            <div class="step-ref passed">55</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And print "Helper ==&gt;", _path</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="55">12:03:19.416 [print] Helper ==&gt; /posts</div>
+                    <div class="step-row">
+                        <div class="step-container" id="56">
+                            <div class="step-ref passed">56</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And print "Helper ==&gt;", _userId</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="56">12:03:19.419 [print] Helper ==&gt; 84</div>
+                    <div class="step-row">
+                        <div class="step-container" id="57">
+                            <div class="step-ref passed">57</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request {"userId": '#(_userId)',"id": 102,"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body": "Fifty"}</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="58">
+                            <div class="step-ref passed">58</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And headers {Accept:'application/json' , Content-Type:'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="59">
+                            <div class="step-ref passed">59</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">419</div>
+                    </div>
+                    <div class="preformatted" data-parent="59">12:03:19.424 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 122
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":84,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+12:03:19.842 response time in milliseconds: 417.31
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcfeeb8b22a3e-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 139
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:20 GMT
+1 &lt; Etag: W/"8b-HnHc6jrh6lM02b+CSGLG/UXhfdM"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6VfneITbN82h1EUSVKtmjExC3C%2FgJJJNtTYP1%2BgUYbLS%2BjdDfqOqiUB6JWD7eszcfl95vYXatqQT6lGdiDQj36ro8FXacDUOD3vymEx5aqEra1BXJmnZLAQov0b329%2BHMkZ4LwUr9%2FUa6IgzcYvJ"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 984
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 84,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="60">
+                            <div class="step-ref passed">60</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># PUT request</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="61">
+                            <div class="step-ref passed">61</div>
+                            <div class="step-cell passed">Given path '/posts/1'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="62">
+                            <div class="step-ref passed">62</div>
+                            <div class="step-cell passed">And request</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="62">{
+  "userId": '#(userId)',
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+    }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="63">
+                            <div class="step-ref passed">63</div>
+                            <div class="step-cell passed">And headers {Accept: 'application/json' , Content-Type: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="64">
+                            <div class="step-ref passed">64</div>
+                            <div class="step-cell passed">When method put</div>
+                        </div>
+                        <div class="time-cell passed">407</div>
+                    </div>
+                    <div class="preformatted" data-parent="64">12:03:19.845 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 123
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":84,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+12:03:20.250 response time in milliseconds: 404.54
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7ecbcff14e0df0e3-CDG
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 26 Jul 2023 10:03:21 GMT
+1 &lt; Etag: W/"8c-Q7lSj3wIpY9iG1QAOyH73veuCTM"
+1 &lt; Expires: -1
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8DsUMtBh8l67em%2FdSzIRVBdrhMutqEkIKClPxZNBIhm4uajHuoc1SNJyp0HtOUry%2B2O%2FQWkcuXAThO3hf29aX7R6LkuNKAg%2FlMLGROQCTfuSblF1xEQFkzuLjgW5x6lyydTVSFXhqMsEiHDaOZwz"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 980
+1 &lt; X-Ratelimit-Reset: 1690365804
+1 &lt; alt-svc: h3=":443"; ma=86400
+{
+  "userId": 84,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="65">
+                            <div class="step-ref passed">65</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="66">
+                            <div class="step-ref passed">66</div>
+                            <div class="step-cell passed">* def responseBody = karate.jsonPath(response, "$[?(@.userId == " + userId + " &amp;&amp; @.id==1)].body")</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="67">
+                            <div class="step-ref passed">67</div>
+                            <div class="step-cell passed">And match responseBody == ["one word"]</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

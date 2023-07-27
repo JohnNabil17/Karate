@@ -1,0 +1,14 @@
+<testsuite failures="0" name="com/api/automation/patchrequest/updateUserDescription.feature" skipped="0" tests="1" time="0.930067">
+  <testcase classname="com.api.automation.patchrequest.updateUserDescription" name="To update the user description for newly added user entry" time="0.930067">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def createdUserId = getRandomValue() .................................... passed
+* def createUser = call read("../createUserEntryWithVariables.feature") {_url:'https://jsonplaceholder.typicode.com', _path: '/posts', _userId: '#(createdUserId)'} . passed
+Given path '/posts/1' ..................................................... passed
+And request {"title" : "new title"} ....................................... passed
+And header Accept = 'application/json' .................................... passed
+When method patch ......................................................... passed
+Then status 200 ........................................................... passed
+And match response.title == "new title" ................................... passed</system-out>
+  </testcase>
+</testsuite>

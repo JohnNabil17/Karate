@@ -1,0 +1,19 @@
+<testsuite failures="1" name="com/api/automation/tags/queryParameter.feature" skipped="0" tests="1" time="0.005604">
+  <testcase classname="com.api.automation.tags.queryParameter" name="To get the data using Query Param" time="0.005604">
+    <failure message="queryParameter.feature:12 - evaluation (js) failed: read(&quot;../../createUserEntryWithVariables.feature&quot;), java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\jnabil\eclipse-workspace\karate\target\test-classes\com\api\automation\tags\..\..\createUserEntryWithVariables.feature (The system cannot find the file specified)&#10;stack trace: com.intuit.karate.Resource.getStream(Resource.java:135)">Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def createdUserId = getRandomValue() .................................... passed
+* def createUser = call read("../../createUserEntryWithVariables.feature") {_url: 'https://jsonplaceholder.typicode.com', _path: '/posts', _userId: '#(createdUserId)'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: queryParameter.feature:12 - evaluation (js) failed: read("../../createUserEntryWithVariables.feature"), java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\jnabil\eclipse-workspace\karate\target\test-classes\com\api\automation\tags\..\..\createUserEntryWithVariables.feature (The system cannot find the file specified)
+stack trace: com.intuit.karate.Resource.getStream(Resource.java:135)&#13;
+	at ✽.* def createUser = call read("../../createUserEntryWithVariables.feature") {_url: 'https://jsonplaceholder.typicode.com', _path: '/posts', _userId: '#(createdUserId)'} (queryParameter.feature:12)&#13;
+
+Given path '/comments' .................................................... skipped
+And params {postId : '#(createdUserId)' , id : '101'} ..................... skipped
+And headers {Accept:'application/json' , Content-Type:'application/json'} . skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

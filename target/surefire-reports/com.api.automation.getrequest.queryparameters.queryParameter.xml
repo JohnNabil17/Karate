@@ -1,0 +1,13 @@
+<testsuite failures="0" name="com/api/automation/getrequest/queryparameters/queryParameter.feature" skipped="0" tests="1" time="0.873013">
+  <testcase classname="com.api.automation.getrequest.queryparameters.queryParameter" name="To get the data using Query Param" time="0.873013">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def createdUserId = getRandomValue() .................................... passed
+* def createUser = call read("../../createUserEntryWithVariables.feature") {_url: 'https://jsonplaceholder.typicode.com', _path: '/posts', _userId: '#(createdUserId)'} . passed
+Given path '/comments' .................................................... passed
+And params {postId : '#(createdUserId)' , id : '101'} ..................... passed
+And headers {Accept:'application/json' , Content-Type:'application/json'} . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

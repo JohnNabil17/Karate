@@ -1,0 +1,14 @@
+<testsuite failures="0" name="com/api/automation/deleterequest/deleteUserEntry.feature" skipped="0" tests="1" time="2.31975">
+  <testcase classname="com.api.automation.deleterequest.deleteUserEntry" name="To delete the user entry from application usign user id" time="2.31975">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+* def getRandomValue = function(){return Math.floor((100) * Math.random());} . passed
+* def createdUserId = getRandomValue() .................................... passed
+* def createUser = call read("../createUserEntryWithVariables.feature") {_url:'https://jsonplaceholder.typicode.com', _path: '/posts', _userId: '#(createdUserId)'} . passed
+Given path '/posts/' + createdUserId ...................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given path '/posts' + createdUserId ....................................... passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

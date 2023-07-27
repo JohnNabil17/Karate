@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: com/api/automation/postrequest/createProductEntry.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Run</td>
+      <td>26 Jul 2023, 12:03</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/api/automation/postrequest/createProductEntry.feature</td>
+          <td      class="passed"    >26</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">26</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="1867524000">1.867</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/api/automation/postrequest/createProductEntry.feature</span>
+
+
+</div>
+
+        <div class="description indention">To create the product entry in the application
+Use POST /products/add to create product entry in the application</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://dummyjson.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:03:17.676 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.619</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To create the product entry in JSON format</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/products/add'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;id&quot;: 131,&quot;title&quot;: &quot;Bad Title&quot;,&quot;description&quot;: &quot;Bad des&quot;,&quot;price&quot;: 10,&quot;discountPercentage&quot;: 10.00,&quot;rating&quot;: 10.00,&quot;stock&quot;: 10,&quot;stocks&quot;: 20,&quot;brand&quot;: &quot;Bad brand&quot;,&quot;category&quot;: &quot;Bad category&quot;,&quot;thumbnail&quot;: &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;: [&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers {Accept:'application/json' , Content-Type:'application/json'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.611</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>12:03:17.684 request:
+1 &gt; POST https://dummyjson.com/products/add
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 501
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummyjson.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;id&quot;:131,&quot;title&quot;:&quot;Bad Title&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;price&quot;:10,&quot;discountPercentage&quot;:10.0,&quot;rating&quot;:10.0,&quot;stock&quot;:10,&quot;stocks&quot;:20,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]}
+
+12:03:18.292 response time in milliseconds: 608.01
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; content-length: 461
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 26 Jul 2023 10:03:19 GMT
+1 &lt; etag: W/&quot;1cd-EqbgD10UMYEbWMeJnN8j9SdM+Oc&quot;
+1 &lt; server: railway
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 120
+1 &lt; x-ratelimit-remaining: 117
+1 &lt; x-ratelimit-reset: 1690365827
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;id&quot;:101,&quot;title&quot;:&quot;Bad Title&quot;,&quot;price&quot;:10,&quot;stock&quot;:10,&quot;rating&quot;:10,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;],&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>12:03:18.293 [print] {
+  &quot;images&quot;: [
+    &quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;
+  ],
+  &quot;thumbnail&quot;: &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,
+  &quot;price&quot;: 10,
+  &quot;rating&quot;: 10,
+  &quot;description&quot;: &quot;Bad des&quot;,
+  &quot;id&quot;: 101,
+  &quot;title&quot;: &quot;Bad Title&quot;,
+  &quot;stock&quot;: 10,
+  &quot;category&quot;: &quot;Bad category&quot;,
+  &quot;brand&quot;: &quot;Bad brand&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.title == &quot;Bad Title&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://dummyjson.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>12:03:17.847 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.625</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To create the product entry in JSON format</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/products/add'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def body = read(&quot;data/productEntry.json&quot;)</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers {Accept:'application/json' , Content-Type:'application/json'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.616</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>12:03:17.859 request:
+1 &gt; POST https://dummyjson.com/products/add
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 501
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummyjson.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;id&quot;:131,&quot;title&quot;:&quot;Bad Title&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;price&quot;:10,&quot;discountPercentage&quot;:10.0,&quot;rating&quot;:10.0,&quot;stock&quot;:10,&quot;stocks&quot;:20,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]}
+
+12:03:18.472 response time in milliseconds: 613.52
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; content-length: 461
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 26 Jul 2023 10:03:19 GMT
+1 &lt; etag: W/&quot;1cd-EqbgD10UMYEbWMeJnN8j9SdM+Oc&quot;
+1 &lt; server: railway
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 120
+1 &lt; x-ratelimit-remaining: 116
+1 &lt; x-ratelimit-reset: 1690365827
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;id&quot;:101,&quot;title&quot;:&quot;Bad Title&quot;,&quot;price&quot;:10,&quot;stock&quot;:10,&quot;rating&quot;:10,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;],&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>12:03:18.474 [print] {
+  &quot;images&quot;: [
+    &quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;
+  ],
+  &quot;thumbnail&quot;: &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,
+  &quot;price&quot;: 10,
+  &quot;rating&quot;: 10,
+  &quot;description&quot;: &quot;Bad des&quot;,
+  &quot;id&quot;: 101,
+  &quot;title&quot;: &quot;Bad Title&quot;,
+  &quot;stock&quot;: 10,
+  &quot;category&quot;: &quot;Bad category&quot;,
+  &quot;brand&quot;: &quot;Bad brand&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.title == &quot;Bad Title&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://dummyjson.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>12:03:18.302 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.621</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To create the product entry in JSON format with embedded expression</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/products/add'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getProductID = function(){return Math.floor((100) * Math.random());}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;id&quot;: '#(getProductID())',&quot;title&quot;: &quot;Bad Title&quot;,&quot;description&quot;: &quot;Bad des&quot;,&quot;price&quot;: 10,&quot;discountPercentage&quot;: 10.00,&quot;rating&quot;: 10.00,&quot;stock&quot;: 10,&quot;stocks&quot;: 20,&quot;brand&quot;: &quot;Bad brand&quot;,&quot;category&quot;: &quot;Bad category&quot;,&quot;thumbnail&quot;: &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;: [&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]}</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers {Accept:'application/json' , Content-Type:'application/json'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.616</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>12:03:18.308 request:
+1 &gt; POST https://dummyjson.com/products/add
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 500
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummyjson.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{&quot;id&quot;:86,&quot;title&quot;:&quot;Bad Title&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;price&quot;:10,&quot;discountPercentage&quot;:10.0,&quot;rating&quot;:10.0,&quot;stock&quot;:10,&quot;stocks&quot;:20,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;,&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;]}
+
+12:03:18.924 response time in milliseconds: 614.35
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; content-length: 461
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 26 Jul 2023 10:03:19 GMT
+1 &lt; etag: W/&quot;1cd-EqbgD10UMYEbWMeJnN8j9SdM+Oc&quot;
+1 &lt; server: railway
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 120
+1 &lt; x-ratelimit-remaining: 114
+1 &lt; x-ratelimit-reset: 1690365827
+1 &lt; x-xss-protection: 1; mode=block
+{&quot;id&quot;:101,&quot;title&quot;:&quot;Bad Title&quot;,&quot;price&quot;:10,&quot;stock&quot;:10,&quot;rating&quot;:10,&quot;images&quot;:[&quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;],&quot;thumbnail&quot;:&quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,&quot;description&quot;:&quot;Bad des&quot;,&quot;brand&quot;:&quot;Bad brand&quot;,&quot;category&quot;:&quot;Bad category&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>12:03:18.925 [print] {
+  &quot;images&quot;: [
+    &quot;https://i.dummyjson.com/data/products/1/1.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/2.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/3.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/4.jpg&quot;,
+    &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;
+  ],
+  &quot;thumbnail&quot;: &quot;https://i.dummyjson.com/data/products/1/thumbnail.jpg&quot;,
+  &quot;price&quot;: 10,
+  &quot;rating&quot;: 10,
+  &quot;description&quot;: &quot;Bad des&quot;,
+  &quot;id&quot;: 101,
+  &quot;title&quot;: &quot;Bad Title&quot;,
+  &quot;stock&quot;: 10,
+  &quot;category&quot;: &quot;Bad category&quot;,
+  &quot;brand&quot;: &quot;Bad brand&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.title == &quot;Bad Title&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

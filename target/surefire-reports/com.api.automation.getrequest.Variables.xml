@@ -1,0 +1,13 @@
+<testsuite failures="0" name="com/api/automation/getrequest/Variables.feature" skipped="0" tests="1" time="0.032666">
+  <testcase classname="com.api.automation.getrequest.Variables" name="To create a Variable" time="0.032666">
+    <system-out>* def app_name = "Google" ................................................. passed
+* def page_load_timeout = 20 .............................................. passed
+Given def int = 10 ........................................................ passed
+And def string = "John" ................................................... passed
+Then print "int var = ", int .............................................. passed
+And print "string var = ", string ......................................... passed
+* def newValue = int + 5 .................................................. passed
+And print "New value = ", newValue ........................................ passed
+And print "Backgroud variables==&gt; " , app_name , page_load_timeout ........ passed</system-out>
+  </testcase>
+</testsuite>

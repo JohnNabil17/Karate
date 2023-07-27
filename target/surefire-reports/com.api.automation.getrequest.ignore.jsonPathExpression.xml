@@ -1,0 +1,14 @@
+<testsuite failures="0" name="com/api/automation/getrequest/ignore/jsonPathExpression.feature" skipped="0" tests="1" time="1.385523">
+  <testcase classname="com.api.automation.getrequest.ignore.jsonPathExpression" name="To get the value of property using json path expression" time="1.385523">
+    <system-out>Given url 'https://dummyjson.com' ......................................... passed
+Given path '/products' .................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def title = karate.jsonPath(response, "$.products[:1].title") ........... passed
+* def description = karate.jsonPath(response, "$.products[:1].description") . passed
+* def price = karate.jsonPath(response, "$.products[:1].price") ........... passed
+And print "title ==&gt;" , title ............................................. passed
+And print "description ==&gt;" , description ................................. passed
+And print "price ==&gt;" , price ............................................. passed</system-out>
+  </testcase>
+</testsuite>

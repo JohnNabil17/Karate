@@ -1,0 +1,147 @@
+20:59:49.123 karate.env system property was:  
+20:59:49.142 request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+
+20:59:49.961 response time in milliseconds: 818.61
+1 < 429
+1 < Cache-Control: no-cache, private
+1 < Content-Type: application/json
+1 < Date: Mon, 24 Jul 2023 18:59:50 GMT
+1 < Retry-After: 57
+1 < Server: nginx/1.21.6
+1 < Vary: Accept-Encoding
+1 < X-Endurance-Cache-Level: 2
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 55
+1 < X-RateLimit-Reset: 1690225248
+1 < X-nginx-cache: WordPress
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+{
+    "message": "Too Many Attempts."
+}
+
+20:59:49.963 status code was: 429, expected: 200, response time: 819, url: https://dummy.restapiexample.com/api/v1/employees, response: {"message":"Too Many Attempts."}
+20:59:49.973 karate.env system property was:  
+20:59:49.977 request:
+1 > POST https://dummyjson.com/products/add
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 502
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummyjson.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"id":"id","title":"Bad Title","description":"Bad des","price":10,"discountPercentage":10.0,"rating":10.0,"stock":10,"stocks":20,"brand":"Bad brand","category":"Bad category","thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+
+20:59:50.603 response time in milliseconds: 624.69
+1 < 200
+1 < access-control-allow-origin: *
+1 < content-length: 461
+1 < content-type: application/json; charset=utf-8
+1 < date: Mon, 24 Jul 2023 18:59:52 GMT
+1 < etag: W/"1cd-EqbgD10UMYEbWMeJnN8j9SdM+Oc"
+1 < server: railway
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < vary: Accept-Encoding
+1 < x-content-type-options: nosniff
+1 < x-dns-prefetch-control: off
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-ratelimit-limit: 120
+1 < x-ratelimit-remaining: 105
+1 < x-ratelimit-reset: 1690225246
+1 < x-xss-protection: 1; mode=block
+{"id":101,"title":"Bad Title","price":10,"stock":10,"rating":10,"images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg","https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"],"thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg","description":"Bad des","brand":"Bad brand","category":"Bad category"}
+
+20:59:50.611 karate.env system property was:  
+20:59:50.621 request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":92,"id":102,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"Fifty"}
+
+20:59:51.049 response time in milliseconds: 426.18
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ebe671d0fef02de-CDG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 139
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 24 Jul 2023 18:59:52 GMT
+1 < Etag: W/"8b-QpEQ490ZzZqiYAJqI58SNxQYG9o"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=I%2FSc%2FOxW2EBAOKbBld4dMY%2FN17vg43FspPIepLJqKFMWeG8tVeOJNMkLippcIMHGP%2BCnfcnBqPXoSm1a%2FCVHTiFgGoudc9oiJb3%2FzxGpU6O%2BlHR8CiwCn%2FNpSwmLbiZevHesgCaWwNp72kJys0dI"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 988
+1 < X-Ratelimit-Reset: 1690225220
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 92,
+  "id": 101,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "Fifty"
+}
+
+20:59:51.052 request:
+1 > PUT https://jsonplaceholder.typicode.com/posts/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 123
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.2)
+{"userId":55,"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"one word"}
+
+20:59:51.465 response time in milliseconds: 413.10
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7ebe671fad382a34-CDG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 24 Jul 2023 18:59:53 GMT
+1 < Etag: W/"8c-0wDu+kvEN/p9JCZfJxa3hs5ei0Y"
+1 < Expires: -1
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Pragma: no-cache
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZSG3NRzEoRdwcoqdFkUwDucpkJs24wRYZUMniMvSeum6SzKHNtGZMHtjF9W9eHx8mBR94iHRSmB9rXJxFCu%2BmDYmyohh%2FxqMsWXtlBErHYDCVyrd6vIzv%2BY9Pt83lU8om0sayPqP8If%2Fg3ReHIHN"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 984
+1 < X-Ratelimit-Reset: 1690225220
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 55,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "one word"
+}
+
